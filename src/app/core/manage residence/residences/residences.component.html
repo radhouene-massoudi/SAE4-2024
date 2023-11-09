@@ -1,8 +1,14 @@
 <p>residences works!</p>
-<div *ngFor="let residence of listResidences">
+<div *ngFor="let residence of listResidences;let i=index">
 {{residence.id}}
 {{residence.name}}
 {{residence.address}}
 <img src="{{residence.image}}">
+<input type="submit" value="show app" (click)="showApp(i)">
 
+</div>
+<hr>
+<div *ngFor="let a of app">
+{{a.id}}
+{{a.residence.name}}
 </div>
