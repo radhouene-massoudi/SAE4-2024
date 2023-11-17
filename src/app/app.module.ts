@@ -11,6 +11,8 @@ import { LoginComponent } from './shared/login/login.component';
 import { NavComponent } from './shared/nav/nav.component';
 import { DetailresidenceComponent } from './core/manage residence/detailresidence/detailresidence.component';
 import { DeleteresidenceComponent } from './core/manage residence/deleteresidence/deleteresidence.component';
+import { FormResidenceComponent } from './core/manage residence/form-residence/form-residence.component';
+import { ApartmentsComponent } from './core/manage residence/apartments/apartments.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { DeleteresidenceComponent } from './core/manage residence/deleteresidenc
     LoginComponent,
     NavComponent,
     DetailresidenceComponent,
-    DeleteresidenceComponent
+    DeleteresidenceComponent,
+    FormResidenceComponent,
+    ApartmentsComponent
   ],
   imports: [
     BrowserModule,

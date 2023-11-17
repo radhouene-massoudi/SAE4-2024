@@ -6,8 +6,12 @@ import { NotfoundComponent } from './shared/notfound/notfound.component';
 import { LoginComponent } from './shared/login/login.component';
 import { DetailresidenceComponent } from './core/manage residence/detailresidence/detailresidence.component';
 import { DeleteresidenceComponent } from './core/manage residence/deleteresidence/deleteresidence.component';
+import { FormResidenceComponent } from './core/manage residence/form-residence/form-residence.component';
+import { ApartmentsComponent } from './core/manage residence/apartments/apartments.component';
 
 const r: Routes = [
+  {path:'addresidence',component:FormResidenceComponent},
+  {path:'app/:id',component:ApartmentsComponent},
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'detail/:idt', component: DetailresidenceComponent },
   { path: 'login', component: LoginComponent },
@@ -17,11 +21,14 @@ const r: Routes = [
       { path: 'remove', component: DeleteresidenceComponent }
     ]
   },
-  { path: '**', component: NotfoundComponent },
+
+  { path: '404', component: NotfoundComponent },
+  {path:'**',redirectTo:'404',pathMatch:'full'}
+  
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(r)],
-  exports: [RouterModule]
+ exports: [RouterModule]
 })
 export class AppRoutingModule { }
