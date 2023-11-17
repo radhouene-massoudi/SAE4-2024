@@ -8,7 +8,7 @@ import { Residences } from 'src/app/model/residence';
   styleUrls: ['./residences.component.css']
 })
 export class ResidencesComponent {
-  app:Apartment[] = [];
+  app: Apartment[] = [];
   listResidences: Residences[] = [
     {
       id: 1, "name": "El fel", "address": "Borj Cedria",
@@ -32,13 +32,13 @@ export class ResidencesComponent {
     { id: 1, "appartNum": 1, "floorNum": 0, "surface": 100, "terrace": "oui", "surfaceTerrace": 20, "category": "S+1", "description": "AppartementS+1", "residence": this.listResidences[0] },
     { id: 2, "appartNum": 2, "floorNum": 0, "surface": 130, "terrace": "non", "surfaceTerrace": 0, "category": "S+2", "description": "Appartement S+2", "residence": this.listResidences[0] },
     { id: 3, "appartNum": 3, "floorNum": 0, "surface": 150, "terrace": "oui", "surfaceTerrace": 30, "category": "S+3", "description": "Appartement S+3", "residence": this.listResidences[1] }];
-  showApp(j:any) {
-    
+  showApp(j: any) {
+
     for (let i = 0; i < this.listApartments.length; i++) {
-     let  index=this.listResidences.indexOf(this.listApartments[i].residence)
-if(j=index){
-  this.app.push(this.listApartments[i]);
-}
+      let index = this.listResidences.indexOf(this.listApartments[i].residence)
+      if (j = index) {
+        this.app.push(this.listApartments[i]);
+      }
     }
   }
 }

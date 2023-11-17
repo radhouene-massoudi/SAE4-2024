@@ -4,6 +4,8 @@
 {{residence.name}}
 {{residence.address}}
 <img src="{{residence.image}}">
+<a routerLink="/detail/{{residence.id}}">detail</a>
+<a [routerLink]="['/detail/',residence.id]">detail</a>
 <input type="submit" value="show app" (click)="showApp(i)">
 
 </div>
@@ -12,3 +14,4 @@
 {{a.id}}
 {{a.residence.name}}
 </div>
+<router-outlet></router-outlet>
