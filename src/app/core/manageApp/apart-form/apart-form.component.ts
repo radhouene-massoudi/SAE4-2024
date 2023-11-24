@@ -19,4 +19,7 @@ export class ApartFormComponent {
     residence:new FormControl(''),
 
   })
+  showForm(){
+    console.log(this.fg.value)
+  }
 }

@@ -4,23 +4,28 @@
 <label>FloorNub</label>
 <input type="text" formControlName="FloorNub">
 <label>surface</label>
-<input type="text" formControlName="">
+<input type="text" formControlName="surface">
 <label>terrace</label>
-<div formControlName="">
+<div formControlName="terrace">
+    <label>Yes</label>
 <input type="radio" value="yes">
+<label>No</label>
 <input type="radio" value="no">
 </div>
 <label>surfaceterrace</label>
-<input type="text" formControlName="">
+<input type="text" formControlName="surfaceterrace">
 <label>cat</label>
-<div formControlName=""> 
+<div formControlName="cat"> 
+    <label>S+1</label>
 <input type="radio" value="S+1">
+<label>S+2</label>
 <input type="radio" value="S+2">
+<label>S+3</label>
 <input type="radio" value="S+3">
 </div>
 <label>desc</label>
-<input type="text" formControlName="">
+<input type="text" formControlName="desc">
 <label>residence</label>
-<input type="text" formControlName="">
-<input type="submit" value="save">
+<input type="text" formControlName="residence">
+<input type="submit" value="save" (click)="showForm()">
 </form>
