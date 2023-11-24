@@ -8,6 +8,7 @@ import { DetailresidenceComponent } from './core/manage residence/detailresidenc
 import { DeleteresidenceComponent } from './core/manage residence/deleteresidence/deleteresidence.component';
 import { FormResidenceComponent } from './core/manage residence/form-residence/form-residence.component';
 import { ApartmentsComponent } from './core/manage residence/apartments/apartments.component';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 
 const r: Routes = [
   {path:'addresidence',component:FormResidenceComponent},
@@ -21,7 +22,7 @@ const r: Routes = [
       { path: 'remove', component: DeleteresidenceComponent }
     ]
   },
-
+  { path: 'addr', component: ReactiveformComponent },
   { path: '404', component: NotfoundComponent },
   {path:'**',redirectTo:'404',pathMatch:'full'}
   
