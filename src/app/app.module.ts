@@ -15,6 +15,10 @@ import { FormResidenceComponent } from './core/manage residence/form-residence/f
 import { ApartmentsComponent } from './core/manage residence/apartments/apartments.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { ApartFormComponent } from './core/manageApp/apart-form/apart-form.component';
+import { TvComponent } from './tv/tv.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { ShowOneProductComponent } from './show-one-product/show-one-product.component';
+import { ErrorsComponent } from './shared/errors/errors.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { ApartFormComponent } from './core/manageApp/apart-form/apart-form.compo
     FormResidenceComponent,
     ApartmentsComponent,
     ReactiveformComponent,
-    ApartFormComponent
+    ApartFormComponent,
+    TvComponent,
+    MobileComponent,
+    ShowOneProductComponent,
+    ErrorsComponent
   ],
   imports: [
     BrowserModule,

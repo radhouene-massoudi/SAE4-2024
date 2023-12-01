@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-apart-form',
@@ -9,7 +9,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 export class ApartFormComponent {
 
   fg=new FormGroup({
-    numap:new FormControl(''),
+    numap:new FormControl('',[Validators.required,Validators.minLength(3)]),
     FloorNub:new FormControl(''),
     surface:new FormControl(''),
     terrace:new FormControl(''),
