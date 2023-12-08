@@ -27,6 +27,7 @@ const r: Routes = [
       { path: 'remove', component: DeleteresidenceComponent }
     ]
   },
+  { path: 'addapp', component: ApartFormComponent },
   { path: 'addr', component: ReactiveformComponent },
   { path: 'addapp', component: ApartFormComponent },
   { path: '404', component: NotfoundComponent },

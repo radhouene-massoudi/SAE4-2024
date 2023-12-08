@@ -21,7 +21,7 @@ import { ShowOneProductComponent } from './show-one-product/show-one-product.com
 import { ErrorsComponent } from './shared/errors/errors.component';
 import { C1sComponent } from './c1s/c1s.component';
 import { C2sComponent } from './c2s/c2s.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +47,8 @@ import { C2sComponent } from './c2s/c2s.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
