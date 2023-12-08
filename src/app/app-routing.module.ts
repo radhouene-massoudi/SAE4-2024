@@ -10,10 +10,14 @@ import { FormResidenceComponent } from './core/manage residence/form-residence/f
 import { ApartmentsComponent } from './core/manage residence/apartments/apartments.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { ApartFormComponent } from './core/manageApp/apart-form/apart-form.component';
+import { C1sComponent } from './c1s/c1s.component';
+import { C2sComponent } from './c2s/c2s.component';
 
 const r: Routes = [
   {path:'addresidence',component:FormResidenceComponent},
   {path:'app/:id',component:ApartmentsComponent},
+  {path:'c1',component:C1sComponent},
+  {path:'c2',component:C2sComponent},
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'detail/:idt', component: DetailresidenceComponent },
   { path: 'login', component: LoginComponent },

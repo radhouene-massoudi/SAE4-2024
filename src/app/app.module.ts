@@ -19,6 +19,8 @@ import { TvComponent } from './tv/tv.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { ShowOneProductComponent } from './show-one-product/show-one-product.component';
 import { ErrorsComponent } from './shared/errors/errors.component';
+import { C1sComponent } from './c1s/c1s.component';
+import { C2sComponent } from './c2s/c2s.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { ErrorsComponent } from './shared/errors/errors.component';
     TvComponent,
     MobileComponent,
     ShowOneProductComponent,
-    ErrorsComponent
+    ErrorsComponent,
+    C1sComponent,
+    C2sComponent
   ],
   imports: [
     BrowserModule,
