@@ -12,6 +12,7 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { ApartFormComponent } from './core/manageApp/apart-form/apart-form.component';
 import { C1sComponent } from './c1s/c1s.component';
 import { C2sComponent } from './c2s/c2s.component';
+import { ListappartementsComponent } from './core/manageApp/listappartements/listappartements.component';
 
 const r: Routes = [
   {path:'addresidence',component:FormResidenceComponent},
@@ -28,6 +29,7 @@ const r: Routes = [
     ]
   },
   { path: 'addapp', component: ApartFormComponent },
+  { path: 'listapp', component: ListappartementsComponent },
   { path: 'addr', component: ReactiveformComponent },
   { path: 'addapp', component: ApartFormComponent },
   { path: '404', component: NotfoundComponent },

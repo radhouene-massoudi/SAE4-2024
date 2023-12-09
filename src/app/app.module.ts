@@ -22,6 +22,7 @@ import { ErrorsComponent } from './shared/errors/errors.component';
 import { C1sComponent } from './c1s/c1s.component';
 import { C2sComponent } from './c2s/c2s.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ListappartementsComponent } from './core/manageApp/listappartements/listappartements.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { HttpClientModule } from '@angular/common/http';
     ShowOneProductComponent,
     ErrorsComponent,
     C1sComponent,
-    C2sComponent
+    C2sComponent,
+    ListappartementsComponent
   ],
   imports: [
     BrowserModule,
