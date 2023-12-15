@@ -13,11 +13,11 @@ export class ApartFormComponent {
 
   }
   fg = new FormGroup({
-    numap: new FormControl('', [Validators.required, Validators.minLength(3)]),
-    FloorNub: new FormControl(''),
+    appartNum: new FormControl(''),
+    floorNum: new FormControl(''),
     surface: new FormControl(''),
     terrace: new FormControl(''),
-    surfaceterrace: new FormControl(''),
+    surfaceTerrace: new FormControl(''),
     cat: new FormControl(''),
     desc: new FormControl(''),
     residence: new FormControl(''),

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AppartementService } from '../service/appartement.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-listappartements',
@@ -8,7 +9,10 @@ import { AppartementService } from '../service/appartement.service';
 })
 export class ListappartementsComponent {
   listappartements:any;
-constructor(private s: AppartementService){
+constructor(
+  private s: AppartementService,
+  private router:Router
+  ){
 
 }
 ngOnInit(){
@@ -18,5 +22,8 @@ ngOnInit(){
       console.log(this.listappartements)
     }
   );
+}
+callComponentUpdate(id:any){
+  this.router.navigate(['/updateappartement/'+id])
 }
 }

@@ -13,6 +13,8 @@ import { ApartFormComponent } from './core/manageApp/apart-form/apart-form.compo
 import { C1sComponent } from './c1s/c1s.component';
 import { C2sComponent } from './c2s/c2s.component';
 import { ListappartementsComponent } from './core/manageApp/listappartements/listappartements.component';
+import { RemoveappartementComponent } from './core/manageApp/removeappartement/removeappartement.component';
+import { UpdateAppartementComponent } from './core/manageApp/update-appartement/update-appartement.component';
 
 const r: Routes = [
   {path:'addresidence',component:FormResidenceComponent},
@@ -23,12 +25,14 @@ const r: Routes = [
   { path: 'detail/:idt', component: DetailresidenceComponent },
   { path: 'login', component: LoginComponent },
   { path: 'first', component: FirstComponent },
+  { path: 'remove/:id', component: RemoveappartementComponent },
   {
     path: 'r', component: ResidencesComponent, children: [
       { path: 'remove', component: DeleteresidenceComponent }
     ]
   },
   { path: 'addapp', component: ApartFormComponent },
+  { path: 'updateappartement/:id', component: UpdateAppartementComponent },
   { path: 'listapp', component: ListappartementsComponent },
   { path: 'addr', component: ReactiveformComponent },
   { path: 'addapp', component: ApartFormComponent },

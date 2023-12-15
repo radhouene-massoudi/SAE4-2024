@@ -1,15 +1,37 @@
 {
   "appartement": [
     {
-      "numap": "Amet labore minima ",
-      "FloorNub": "Iure obcaecati eveni",
-      "surface": "Amet sit asperiore",
-      "terrace": "yes",
-      "surfaceterrace": "Voluptatem Ut minim",
-      "cat": "S+3",
-      "desc": "Eiusmod ut et sit c",
-      "residence": "Ut quos omnis quam v",
-      "id": 1
+      "numap": "esprit",
+      "FloorNub": "Magni irure sint omn",
+      "surface": "esprit",
+      "terrace": "",
+      "surfaceterrace": "In consequatur Nost",
+      "cat": "",
+      "desc": "Voluptatem dolor qui",
+      "residence": "Corrupti officia pe",
+      "id": 2
+    },
+    {
+      "numap": "Quia aliquam iusto e",
+      "FloorNub": "Voluptatem aut venia",
+      "surface": "Ea et modi magna neq",
+      "terrace": "no",
+      "surfaceterrace": "Laboriosam velit v",
+      "cat": "S+2",
+      "desc": "Eos ratione sit qui",
+      "residence": "Numquam quis in et i",
+      "id": 3
+    },
+    {
+      "numap": "Quia aliquam iusto e",
+      "FloorNub": "Voluptatem aut venia",
+      "surface": "Ea et modi magna neq",
+      "terrace": "no",
+      "surfaceterrace": "Laboriosam velit v",
+      "cat": "S+2",
+      "desc": "Eos ratione sit qui",
+      "residence": "Numquam quis in et i",
+      "id": 4
     }
   ],
   "residence": []

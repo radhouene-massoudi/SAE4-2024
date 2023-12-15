@@ -1,1 +1,8 @@
 <p>listappartements works!</p>
+<div *ngFor="let app of this.listappartements">
+{{app.id}}
+{{app.FloorNub}}
+{{app.surface}}
+<a routerLink="/remove/{{app.id}}">remove</a>
+<input type="submit" value="update" (click)="callComponentUpdate(app.id)">
+</div>

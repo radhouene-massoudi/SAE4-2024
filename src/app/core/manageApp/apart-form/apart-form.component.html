@@ -1,11 +1,9 @@
 <form [formGroup]="fg">
 <label>numap</label>
-<input type="text" formControlName="numap" >
-<div *ngIf="fg.get('numap')?.invalid">
-<app-errors [errormsg]="fg.get('numap')?.errors"></app-errors>
-</div>
+<input type="text" formControlName="appartNum" >
+
 <label>FloorNub</label>
-<input type="text" formControlName="FloorNub">
+<input type="text" formControlName="floorNum">
 <label>surface</label>
 <input type="text" formControlName="surface">
 <label>terrace</label>
@@ -16,7 +14,7 @@
 <input type="radio" value="no" formControlName="terrace">
 </div>
 <label>surfaceterrace</label>
-<input type="text" formControlName="surfaceterrace">
+<input type="text" formControlName="surfaceTerrace">
 <label>cat</label>
 <div > 
     <label>S+1</label>
